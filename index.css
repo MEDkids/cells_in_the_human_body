@@ -54,7 +54,7 @@ section {
     font-weight: 800;
 }
 
-section{
+section {
     text-align: center;
 }
 
@@ -75,25 +75,25 @@ section{
     left: 250;
 }
 
-#adele_text{
+#adele_text {
     z-index: 1;
     position: absolute;
     margin-top: 50;
     margin-left: 50;
 }
 
-.human_body_cells{
-    width: 888;
-    height: 851;
+.human_body_cells {
+    width: 888px;
+    height: 851px;
 }
 
-.section_2{
-        background-image: linear-gradient(#FFD1E940, #ADE8F840);
-        display: grid;
-        grid-template-columns: auto auto auto auto auto;
+.section_2 {
+    background-image: linear-gradient(#FFD1E940, #ADE8F840);
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
 }
 
-.human_body_cells_text_div{
+.human_body_cells_text_div {
     /* width: 408px;
     height: 338px; */
     background-color: #FEC7FF60;
@@ -101,11 +101,11 @@ section{
     align-self: center;
 }
 
-#human_body_cells_text_audio_icon{
+#human_body_cells_text_audio_icon {
     margin-top: 20;
 }
 
-.human_body_cells_text{
+.human_body_cells_text {
     font-size: 28px;
     margin-top: 0;
     color: #0E0E0E;
@@ -116,4 +116,59 @@ section{
     font-weight: bolder;
     font-size: 36px;
     font-style: italic;
+}
+
+.section_3 {
+    background-color: #F1D9E8;
+}
+
+.did_you_know_text {
+    border-radius: 30px / 30px;
+    background-color: #FFF;
+    width: 350px;
+    height: 150px;
+    position: relative;
+    top: 40px;
+    margin: auto;
+    
+}
+
+.did_you_know_text_bold {
+    color: #FA00FF;
+    font-weight: bolder;
+    font-size: 35px;
+}
+
+.did_you_know_text_2{
+    color: #007198;
+    font-size: 30px;
+}
+.circles_grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    position: relative;
+    top: 60px;
+}
+
+.outer_circle {
+    z-index: 1;
+    position: relative;
+}
+
+.inner_circle {
+    z-index: 2;
+    position: relative;
+    top: -410px;
+    left: -15px;
+}
+
+.hand_tap {
+    width: 172.82px;
+    height: 172.82px;
+    transform: rotate(-22.8deg);
+    position: relative;
+    z-index: 3;
+    /* left: -824.98px; */
+    top: -670px;
+    left: -15px;
 }
