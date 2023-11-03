@@ -178,17 +178,11 @@ section {
 
 
 
-#inner_circle_1{
+#inner_circle_1 {}
 
-}
+#inner_circle_1 {}
 
-#inner_circle_1{
-
-}
-
-#inner_circle_1{
-
-}
+#inner_circle_1 {}
 
 .section_4 {
     background-color: #FFF8EE;
@@ -201,7 +195,7 @@ section {
     top: 30px;
 }
 
-.section_4_heading_text_bold {
+.section_4_heading_text_2 {
     color: #EB6A54;
 }
 
@@ -211,14 +205,16 @@ section {
 
 .section_4_grid_container {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 769px 669px;
     grid-template-rows: 300px 300px 300px;
+    justify-content: center;
 }
 
 
 #immune_cells_1 {
     margin-top: 50px;
     margin-left: 20px;
+    grid-area: 1/1/1/2;
 }
 
 #immune_cells_2 {
@@ -232,21 +228,103 @@ section {
 }
 
 #amoeba_blob_1 {
-    z-index: 0;
+    z-index: 1;
+    grid-area: 1/2/1/2;
     margin-top: -30px;
+    margin-left: -60px;
 }
 
 #audio_Icon_orange {
     z-index: 1;
     grid-area: 2/2/3/2;
     margin-top: -130px;
-    margin-left: 360px;
+    margin-left: 300px;
 }
 
 #ameoba_text {
     z-index: 2;
     font-size: 32px;
-    grid-area: 2/2/3/2;
+    grid-area: 2/2/2/2;
     margin-top: -90px;
     color: #EA7203;
 }
+
+.purple_text{
+    color: #FA00FF;
+}
+
+.bold_text{
+    font-weight: bolder;
+}
+
+.section_5{
+    background-color: #FFF;
+}
+
+
+.section_5_grid_container{
+    display: grid;
+    grid-template-columns: 300px 400px 650px 200px 400px;
+    grid-template-rows: 200px 200px 200px;
+    justify-content: center;
+}
+.cell_gif{
+    transform: rotate(-128.79deg);
+    grid-area: 2/2/2/2;
+    margin-left: 100px;
+}
+
+.chat_bubble{
+    margin-left: 130px;
+    grid-area: 1/3/1/3;
+    margin-top: 50px;
+}
+
+.chat_bubble_did_you_know_text{
+    font-size: 45px;
+    color: #FFF;
+    grid-area: 1/5/2/3;
+    margin-top: 120px;
+    margin-left: -40px;
+}
+.chat_bubble_text{
+    font-size: 32px;
+    z-index: 1;
+    grid-area: 2/5/2/3;
+    margin-top: -10px;
+    margin-left: -40px;
+}
+
+.herringbone{
+    grid-area: 1/5/5/5;
+}
+.section_5_scroll_down_text{
+    font-size: 45px;
+    grid-area: 4/3/4/3;
+}
+
+
+.expand {
+    background: gray;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+  }
+  
+  .types_of_cell {
+    background-color: #FFF0C0;
+    width: 1000px;
+    height: 350px;
+    grid-template-columns: 300px 500px;
+  }
+
+  .types_of_cell_top{
+    border-radius: 100px 100px 0px 0px;
+  }
+
+  .types_of_cell_bottom{
+    border-radius:  0px 0px 100px 100px;
+  }
+  
+  .font_text_size{
+    font-size: 45px;
+  }
