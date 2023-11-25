@@ -58,9 +58,16 @@
             <img class="inner_circles" id="inner_circle_2" src="./assets/inner_circle_did_you_know.png">
             <img class="inner_circles" id="inner_circle_3" src="./assets/inner_circle_did_you_know.png">
 
-            <img class="hand_tap" id="hand_tap_1" src="./assets/hand_tap_1.gif">
-            <img class="hand_tap" id="hand_tap_2" src="./assets/hand_tap_1.gif">
-            <img class="hand_tap" id="hand_tap_3" src="./assets/hand_tap_1.gif">
+            <img class="hand_tap" id="hand_tap_1" src="./assets/hand_tap_1.gif" onclick="hideHandTap(1,true)">
+            <img class="hand_tap" id="hand_tap_2" src="./assets/hand_tap_1.gif" onclick="hideHandTap(2,true)">
+            <img class="hand_tap" id="hand_tap_3" src="./assets/hand_tap_1.gif" onclick="hideHandTap(3,true)">
+
+            <a class="circle_text" id="circle_text_1" onclick="hideHandTap(1,false)">Cells provide structure for the
+                body</a>
+            <a class="circle_text" id="circle_text_2" onclick="hideHandTap(2,false)">Cells convert those nutrients into
+                energy</a>
+            <a class="circle_text" id="circle_text_3" onclick="hideHandTap(3,false)">Cells take in nutrients from
+                food</a>
         </div>
     </section>
 
@@ -99,34 +106,156 @@
             <p class="purple_text section_5_scroll_down_text bold_text">Scroll down to find out more!!</p>
         </div>
 
+
+
+
+
+
         <div class="expand">
-            <div class="types_of_cell types_of_cell_top">
-                <img src="./assets/stem_cell_thumbnail.png">
-                <a class="font_text_size">Stem Cells</a>
-            </div>
-            <div class="types_of_cell">
-                <img src="./assets/thumbnail_blood_cell.png">
-                <a class="font_text_size">Blood Cells</a>
-            </div>
-            <div class="types_of_cell">
-                <img src="./assets/thumbnail_neuron_cells.png">
-                <a class="font_text_size">Nerve Cells</a>
-            </div>
-            <div class="types_of_cell">
-                <img src="./assets/thumbnail_skin_cells.png">
-                <a class="font_text_size">Skin Cells</a>
-            </div>
-            <div class="types_of_cell">
-                <img src="./assets/thumbnail_muscle_cell.png">
-                <a class="font_text_size">Muscle Cells</a>
 
-            </div>
-            <div class="types_of_cell types_of_cell_bottom">
-                <a>Want to learn about other common muscles? 
-                <a class="purple_text bold_text"> click here!</a></a>
+            <div>
+                <div id="cell_type_1" class="types_of_cell types_of_cell_top" onclick="showContent(1)">
+                    <img class="img_center" src="./assets/stem_cell_thumbnail.png">
+                    <a class="font_styles_heading text_center bold_text">Stem Cells</a>
+                </div>
+
+                <div id="cell_type_content_1" class="expanded types_of_cell_top cell_type_content">
+                    <a class="font_styles_heading text_center bold_text expanded_title">Stem Cells</a>
+                    <p class="expanded_text font_styles_body"> Stem cells are unique in that originate as unspecialized
+                        cells and have the ability to develop
+                        into specialized cells that can be used to build specific organs or tissues. Stem cells can
+                        divide and replicate many times in order to replenish and repair tissue.</p>
+                    <img id="stem_cell_application_img" class="expanded_Images"
+                        src="./assets/stem_cell_application_1.png">
+                </div>
+
+                <div class="inline">
+                    <div class="line_end"></div>
+                    <div class="line"></div>
+                    <div class="line_end"></div>
+                </div>
             </div>
 
-          </div>
+
+
+
+            <div>
+                <div id="cell_type_2" class="types_of_cell" onclick="showContent(2)">
+                    <img class="img_center" src="./assets/thumbnail_blood_cell.png">
+                    <a class="font_styles_heading bold_text">Blood Cells</a>
+                </div>
+
+                <div id="cell_type_content_2" class="expanded types_of_cell cell_type_content">
+                    <a class="font_styles_heading text_center bold_text expanded_title">Blood Cells</a>
+                    <p class="expanded_text font_styles_body"> From transporting oxygen throughout the body to fighting
+                        infection,
+                        blood cell activity is vital to life. Blood cells are produced by bone marrow. The three major
+                        types
+                        of cells in the blood are red blood cells, white blood cells, and platelets.</p>
+                    <img id="blood_cell_img" class="expanded_Images" src="./assets/composition_of_blood.png">
+                </div>
+
+                <div class="inline">
+                    <div class="line_end"></div>
+                    <div class="line"></div>
+                    <div class="line_end"></div>
+                </div>
+            </div>
+
+
+
+
+            <div>
+                <div id="cell_type_3" class="types_of_cell" onclick="showContent(3)">
+                    <img class="img_center" src="./assets/thumbnail_neuron_cells.png">
+                    <a class="font_styles_heading bold_text">Nerve Cells</a>
+                </div>
+
+                <div id="cell_type_content_3" class="expanded types_of_cell cell_type_content">
+                    <a class="font_styles_heading text_center bold_text expanded_title">Nerve Cells</a>
+                    <p class="expanded_text font_styles_body"> Nerve cells or neurons are the most basic unit of nervous
+                        system. Nerves send signals between the brain, spinal cord, and other body organs via nerve
+                        impluses.
+                        Structurally, a neuron consists of a cell body and nerve processes. The central cell body
+                        contains
+                        the neuron's nucleus, associated cytoplasm, and organelles.
+                    </p>
+                    <img id="stem_cell_application_img" class="expanded_Images" src="./assets/neuron_cells_1.png">
+                    <img id="stem_cell_application_img" class="expanded_Images_2" src="./assets/neuron_cells_2.png">
+                </div>
+
+                <div class="inline">
+                    <div class="line_end"></div>
+                    <div class="line"></div>
+                    <div class="line_end"></div>
+                </div>
+            </div>
+
+
+
+            <div>
+                <div id="cell_type_4" class="types_of_cell" onclick="showContent(4)">
+                    <img class="img_center" src="./assets/thumbnail_skin_cells.png">
+                    <a class="font_styles_heading bold_text">Skin Cells</a>
+                </div>
+
+                <div id="cell_type_content_4" class="expanded types_of_cell cell_type_content">
+                    <a class="font_styles_heading text_center bold_text expanded_title">Skin Cells</a>
+                    <p class="expanded_text font_styles_body"> The skin is composed of a layer of epithelial
+                        tissue (dermis) and an underlying subcutaneous layer. The outermost layer of the
+                        skin is composed of flat, squamous epithelial cells that are closely packed together.
+                        The skin covers a wide range of roles. It protects internal structure of the body from
+                        damage, prevents dehydration, acts as a barrier against germs, stores fat,
+                        and produces vitamins and hormones.
+                    </p>
+                    <img id="stem_cell_application_img" class="expanded_Images"
+                        src="./assets/skin_cells_1.png">
+                </div>
+
+                <div class="inline">
+                    <div class="line_end"></div>
+                    <div class="line"></div>
+                    <div class="line_end"></div>
+                </div>
+            </div>
+
+
+            <div>
+                <div id="cell_type_5" class="types_of_cell" onclick="showContent(5)">
+                    <img class="img_center" src="./assets/thumbnail_muscle_cell.png">
+                    <a class="font_styles_heading bold_text">Muscle Cells</a>
+                </div>
+
+                <div id="cell_type_content_5" class="expanded types_of_cell cell_type_content">
+                    <a class="font_styles_heading text_center bold_text expanded_title">Muscle Cells</a>
+                    <p class="expanded_text font_styles_body"> 
+                        Muscle cells form muscle tissue, which enables all bodily movement. 
+                        The three types of muscle cells are skeletal, cardiac, and smooth. 
+                        Skeletal muscle tissue attaches to bones to facilitates voluntary movement. 
+                        Cardiac muscle cells form involuntary muscle, or muscle that doesn't require 
+                        conscious effort to operate, found in the heart.  Smooth muscle tissue is 
+                        not striated like cardiac and skeletal muscle. 
+                    </p>
+                    <img id="stem_cell_application_img" class="expanded_Images"
+                        src="./assets/muscle_cell_1.png">
+                </div>
+
+                <div class="inline">
+                    <div class="line_end"></div>
+                    <div class="line"></div>
+                    <div class="line_end"></div>
+                </div>
+            </div>
+
+
+
+            <div>
+                <div class="types_of_cell types_of_cell_bottom">
+                    <a class="font_styles_heading">Want to learn about other common muscles?
+                        <a class="purple_text bold_text font_styles_heading"> click here!</a></a>
+                </div>
+            </div>
+        </div>
     </section>
 
 </body>
