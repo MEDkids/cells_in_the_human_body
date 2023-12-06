@@ -1,3 +1,9 @@
+body {
+    margin: 0;
+    background-color: #ADE8F840;
+    background-repeat: no-repeat;
+}
+
 .logo {
     position: relative;
     top: 0;
@@ -24,26 +30,10 @@
     height: 269px;
 }
 
-body {
-    margin: 0;
-    background-color: #ADE8F840;
-    background-repeat: no-repeat;
-}
-
 section {
     font-family: sans-serif;
     min-height: 100vh;
 }
-
-/* section:nth-child(1) {
-    background: orange;
-    color: white;
-  }
-  
-  section:nth-child(2) {
-    background: cyan;
-    color: white;
-  } */
 
 #section_1_cell_title {
     color: #FA00FF;
@@ -94,8 +84,6 @@ section {
 }
 
 .human_body_cells_text_div {
-    /* width: 408px;
-    height: 338px; */
     background-color: #FEC7FF60;
     border-radius: 15%;
     align-self: center;
@@ -125,12 +113,11 @@ section {
 .did_you_know_text {
     border-radius: 30px / 30px;
     background-color: #FFF;
-    width: 350px;
+    width: 550px;
     height: 150px;
     position: relative;
     top: 40px;
     margin: auto;
-
 }
 
 .did_you_know_text_bold {
@@ -188,12 +175,6 @@ section {
     visibility: hidden;
 }
 
-#inner_circle_1 {}
-
-#inner_circle_1 {}
-
-#inner_circle_1 {}
-
 .section_4 {
     background-color: #FFF8EE;
     font-size: 44px;
@@ -219,7 +200,6 @@ section {
     grid-template-rows: 300px 300px 300px;
     justify-content: center;
 }
-
 
 #immune_cells_1 {
     margin-top: 50px;
@@ -271,7 +251,6 @@ section {
     background-color: #FFF;
 }
 
-
 .section_5_grid_container {
     display: grid;
     grid-template-columns: 300px 400px 650px 200px 400px;
@@ -304,7 +283,7 @@ section {
     z-index: 1;
     grid-area: 2/5/2/3;
     margin-top: -10px;
-    margin-left: -40px;
+    margin-left: -10px;
 }
 
 .herringbone {
@@ -314,8 +293,8 @@ section {
 .section_5_scroll_down_text {
     font-size: 45px;
     grid-area: 4/3/4/3;
+    margin-left: -20px;
 }
-
 
 .expand {
     display: grid;
@@ -386,33 +365,60 @@ section {
     height: auto;
 }
 
-
 .expanded_title {
     grid-area: 1/2/1/2;
     margin-top: 80px;
     justify-self: start;
 }
 
-.expanded_text{
+.expanded_text {
     grid-area: 1/2/1/2;
     margin-top: 150px;
     justify-self: start;
     text-align: left;
 }
 
-.cell_type_content{
+.adjust_blood_cells_title {
+    margin-top: -80px;
+}
+
+.adjust_nerve_cells_title {
+    margin-top: -100px;
+}
+
+.adjust_skin_cells_title {
+    margin-top: -110px;
+}
+
+.adjust_muscle_cells_title {
+    margin-top: -120px;
+}
+
+.cell_type_content {
     display: none;
 }
 
-.expanded_Images{
+.expanded_Images {
     width: 800px;
     height: fit-content;
     grid-area: 3/3/2/2;
-    /* padding-bottom: 20px; */
 }
 
-.expanded_Images_2{
+.expanded_Images_2 {
     width: 800px;
     height: fit-content;
     grid-area: 4/3/4/2;
+}
+
+#learn_more_expand {
+    grid-area: 4/3/4/2;
+    margin-top: 40px;
+}
+
+.font_styles_expand_learn {
+    color: #007198;
+}
+
+.font_size_learn {
+    font-size: 45px;
 }

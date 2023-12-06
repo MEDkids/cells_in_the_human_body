@@ -30,7 +30,7 @@ function showContent(id) {
     x.style.display = 'none';
     y.style.display = 'grid';
 
-    if(previousClick!=0){
+    if (previousClick != 0) {
         var p = document.getElementById("cell_type_" + previousClick);
         var q = document.getElementById("cell_type_content_" + previousClick);
         p.style.display = 'grid';
